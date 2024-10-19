@@ -53,7 +53,7 @@ const Home = () => {
                         allProducts?.length>0 ?
                             visibleProductCards?.map(product=>(
                                 <div key={product?.id} className="rounded border p-2 shadow flex flex-col justify-between">
-                                    <img className='w-full object-cover' width={'100%'} src={product?.thumbnail} alt="" />
+                                    <img className=' object-cover' width={'100%'} src={product?.thumbnail} alt="" />
                                     <div className="text-center flex flex-col justify-between items-center">
                                         <h3 className='text-xl font-bold'>{product?.title}</h3>
                                         <Link className='bg-yellow-500 rounded p-1 mt-3' to={`${product?.id}/view`}>View More...</Link>
